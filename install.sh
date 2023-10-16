@@ -66,7 +66,7 @@ sudo apt-get -f install -y --force-yes
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # Install Chromedriver
-wget -N https://chromedriver.storage.googleapis.com/114.0.5735.16/chromedriver_linux64.zip
+wget -N https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/linux64/chromedriver-linux64.zip
 unzip -o chromedriver_linux64.zip
 chmod +x chromedriver
 sudo rm -f /usr/local/share/chromedriver
@@ -97,9 +97,9 @@ sudo apt-get -f install -y --force-yes
 sudo easy_install pip
 
 # get python dependency
-wget -O requirements.txt https://raw.githubusercontent.com/garywu/gae-selenium/master/requirements.txt
+wget -O requirements.txt https://raw.githubusercontent.com/Agney-gt/google-compute-engine-selenium/master/requirements.txt
 sudo pip install -r requirements.txt
-wget -O demo.py https://raw.githubusercontent.com/garywu/gae-selenium/master/demo.py
+wget -O demo.py https://raw.githubusercontent.com/Agney-gt/google-compute-engine-selenium/master/demo.py
 chmod +x demo.py
-wget -O start_headless.sh https://raw.githubusercontent.com/garywu/gae-selenium/master/start_headless.sh
+wget -O start_headless.sh https://raw.githubusercontent.com/Agney-gt/google-compute-engine-selenium/master//start_headless.sh
 chmod +x start_headless.sh
