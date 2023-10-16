@@ -8,15 +8,6 @@ display.start()
 
 url = 'http://www.python.org'
 
-print('browsing with firefox, ', url)
-try:
-  browser = webdriver.Firefox()
-  browser.get(url)
-  print(browser.title)
-  browser.quit()
-except Exception as e:
-  print e
-
 print('browsing with chrome, ', url)
 try:
   browser = webdriver.Chrome()
